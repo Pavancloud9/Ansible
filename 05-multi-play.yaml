@@ -1,0 +1,5 @@
+- name: PLAY1
+  hosts: local
+  tasks:
+  - name: ping the server
+    ansible.builtin.ping:
