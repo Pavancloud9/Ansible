@@ -7,13 +7,13 @@
     TRAINER: sivakumar
   tasks:
   - name: print the variables
-    vars:
+    vars:  # Task level variables     
       COURSE: ansible
     ansible.builtin.debug:
       msg: "course is {{COURSE}}, duration is {{DURATION}}, trainer is {{TRAINER}}"
 
   - name: print the variables1
-    vars:
+    vars: # Task level variables
       COURSE: git
     ansible.builtin.debug:
       msg: "course is {{COURSE}}, duration is {{DURATION}}, trainer is {{TRAINER}}"
