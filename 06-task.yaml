@@ -11,3 +11,7 @@
       COURSE: ansible
     ansible.builtin.debug:
       msg: "course is {{COURSE}}, duration is {{DURATION}}, trainer is {{TRAINER}}"
+
+  - name: print the variables1
+    ansible.builtin.debug:
+      msg: "course is {{COURSE}}, duration is {{DURATION}}, trainer is {{TRAINER}}"
