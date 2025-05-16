@@ -10,4 +10,4 @@
   tasks:
   - name: prompt
     ansible.builtin.debug:
-      msg: "course is {{COURSE}}, duration is {{120 hrs}}, trainer is {{TRAINER}}"
+      msg: "course is {{COURSE}}, duration is {{DURATION}}, trainer is {{TRAINER}}"
