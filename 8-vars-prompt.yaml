@@ -1,8 +1,6 @@
 - name: prompt
   hosts: local
   connection: local
-  vars_files:
-  - variables_files.yaml
   vars_prompt:
   - name: COURSE
     prompt: please enter course name
