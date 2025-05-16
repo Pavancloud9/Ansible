@@ -5,16 +5,11 @@
     COURSE: "devops with aws"
     DURATION: "120 hrs"
     TRAINER: sivakumar
+  
   tasks:
   - name: print the variables
     vars:  # Task level variables     
       COURSE: ansible
-    ansible.builtin.debug:
-      msg: "course is {{COURSE}}, duration is {{DURATION}}, trainer is {{TRAINER}}"
-
-  - name: print the variables1
-    vars: # Task level variables
-      COURSE: git
     ansible.builtin.debug:
       msg: "course is {{COURSE}}, duration is {{DURATION}}, trainer is {{TRAINER}}"
 
