@@ -1,0 +1,13 @@
+- name: prompt
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: COURSE
+    prompt: please enter course name
+  - name: DURATION
+    prompt: please enter duration
+  
+  tasks:
+  - name: prompt
+    ansible.builtin.debug:
+      msg: "course is {{COURSE}}, duration is {{120 hrs}}, trainer is {{TRAINER}}"
