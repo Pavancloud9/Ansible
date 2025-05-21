@@ -1,24 +1,10 @@
 - name: variables
   hosts: local
   connection: local
-  vars:
-    COURSE: devops
-    DURATION: "120 hrs"
-    TRAINER: sivakumar
-  
+  vars_files:
+    variables_files.yaml
+
   tasks:
   - name: print the variables
-    vars:
-      COURSE: ansible
     ansible.builtin.debug:
       msg: "course is {{COURSE}}, duration is {{DURATION}}, trainer is {{TRAINER}}"
-
-  - name: print the variables2
-    ansible.builtin.debug:
-      msg: "course is {{COURSE}}, duration is {{DURATION}}, trainer is {{TRAINER}}"
-    
-  - name: print the variables3
-    vars:
-      COURSE: aws
-    ansible.builtin.debug:
-      msg: "course is {{COURSE}}, duration is {{DURATION}}, trainer is {{TRAINER}}"  
