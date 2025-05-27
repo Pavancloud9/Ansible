@@ -2,14 +2,19 @@
   hosts: local
   connection: local
   tasks:
-  - name: task 1 print 1
+  - name: PLAY 1 AND TASK1
     ansible.builtin.debug:
-      msg: "hello from play 1 and task 1"
+      msg: "Hello from PLAY 1 AND TASK 1"
 
-- name: PLAY2 
+- name: PLAY 2 
   hosts: local
   connection: local
   tasks:
-  - name: PLAY 2 and TASK 2
-    ansible.builtin.debug:
-      msg: "Hello from PLAY 2 and TASK 2"
+  - name: Install nginx
+    ansible.builtin.package:
+      name: nginx
+      state: present
+  - name: run nginx service
+    ansible.builtin.service:
+      name: nginx
+      state: started
