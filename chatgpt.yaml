@@ -4,15 +4,15 @@
   tasks:
   - name: Install apache
     ansible.builtin.package:
-      name: apache
+      name: httpd
       state: present
   - name: Start the apache service
     ansible.builtin.service:
-      name: apache
+      name: httpd
       state: started
   - name: Enable the service to start automatically on reboot 
     ansible.builtin.service:
-      name: apache
+      name: httpd
       enabled: yes
   
   - name: print a debug message
