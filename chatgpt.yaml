@@ -1,0 +1,20 @@
+- name: Install and run apache
+  hosts: ansible
+  become: yes
+  tasks:
+  - name: Install apache
+    ansible.builtin.package:
+      name: apache
+      state: present
+  - name: Start the apache service
+    ansible.builtin.service:
+      name: apache
+      state: started
+  - name: Enable the service to start automatically on reboot 
+    ansible.builtin.service:
+      name: apache
+      enabled: yes
+  
+  - name: print a debug message
+    ansible.builtin.debug:
+      msg: "Apache is installed and running"
