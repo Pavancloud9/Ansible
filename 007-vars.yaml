@@ -1,7 +1,7 @@
 - name: variables
   hosts: local
   connection: local
-  variables_files:
+  vars_files:
   - variables_files.yaml
 
   tasks:
