@@ -11,7 +11,6 @@
     ansible.builtin.debug:
       msg: "course is {{COURSE}}, duration is {{DURATION}}, trainer is {{TRAINER}}"
     
-  tasks:
   - name: "print the variables 1"
     ansible.builtin.debug:
       msg: "course is ansible, duration is 100hrs, trainer is siva anna"
