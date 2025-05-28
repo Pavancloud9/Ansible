@@ -10,9 +10,6 @@
     ansible.builtin.service:
       name: httpd
       state: started
-  - name: Enable the service to start automatically on reboot 
-    ansible.builtin.service:
-      name: httpd
       enabled: yes
   
   - name: print a debug message
