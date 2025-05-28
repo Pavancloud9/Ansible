@@ -1,0 +1,7 @@
+- name: prompt
+  hosts: local
+  connection: local
+  tasks:
+  - name: prompt
+    ansible.builtin.debug:
+      msg: "course is {{COURSE}}, duration is {{DURATION}}, trainer is {{TRAINER}}"
