@@ -1,11 +1,10 @@
 - name: variables
   hosts: local
   connection: local
-
   vars:
-  - GREET: task
+    GREET: task
 
-  task:
+  tasks:
   - name: print the variables
     ansible.builtin.debug:
       msg: "Hello from {{GREET}}"
