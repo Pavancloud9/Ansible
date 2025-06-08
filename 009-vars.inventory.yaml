@@ -1,3 +1,0 @@
-- name: variables
-  hosts: local
-  connection: local
