@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    GREET: task
+    GREET: "task level variables"
 
   vars_files:
   - variables_files.yaml
