@@ -1,6 +1,5 @@
 - name: prompt
   hosts: ansible
-  
   tasks:
   - name: prompt
     ansible.builtin.debug:
