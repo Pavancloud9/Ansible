@@ -1,5 +1,6 @@
 - name: prompt
-  hosts: ansible
+  hosts: local
+  connection: local
   tasks:
   - name: prompt
     ansible.builtin.debug:
