@@ -1,0 +1,13 @@
+- name: variables
+  hosts: local
+  connection: local
+  vars:     # Play level variables                       
+    GREET: "from play"
+  
+  tasks:
+  - name: task level variables
+    vars:
+      GREET: "from task"
+    ansible.builtin.debug:
+      msg: "Hello from {{GREET}}"
+  
