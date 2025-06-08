@@ -4,8 +4,7 @@
   vars:
     GREET: "task level variables"
 
-  vars_files:
-  - variables_files.yaml
+  
 
   tasks:
   - name: print the variables
