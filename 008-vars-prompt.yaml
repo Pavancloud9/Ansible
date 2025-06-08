@@ -4,10 +4,13 @@
   vars_prompt:
   - name: COURSE
     prompt: enter your course name
+    private: false
   - name: DURATION
     prompt: enter your duration
+    private: false
   - name: TRAINER
     prompt: enter your trainer name
+    private: false
 
   tasks:
   - name: prompt
