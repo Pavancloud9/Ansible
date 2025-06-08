@@ -8,4 +8,4 @@
   task:
   - name: print the variables
     ansible.builtin.debug:
-      msg: "Hello from GREET"
+      msg: "Hello from {{GREET}}"
