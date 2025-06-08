@@ -2,12 +2,15 @@
   hosts: local
   connection: local
   vars:     # Play level variables                       
-    GREET: "from play"
+    GREET: "play"
   
-  tasks:
+  vars_files:   # variable files
+  - variables_files.yaml
+
+  tasks:   # Task level variables
   - name: task level variables
     vars:
       GREET: "from task"
     ansible.builtin.debug:
-      msg: "Hello from {{GREET}}"
+      msg: "Hello from {{GREET}}" 
   
