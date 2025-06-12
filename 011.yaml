@@ -1,8 +1,8 @@
 - name: variables
   hosts: local
   connection: local
-  # vars:     # Play level variables     ##### 5555555555
-  #   GREET: "play level variables"
+  vars:        ##### 5555555555
+    GREET: "play level variables"
   
   vars_files:   # variable files        
   - variables_files.yaml
