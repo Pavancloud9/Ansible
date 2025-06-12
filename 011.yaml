@@ -7,15 +7,15 @@
   vars_files:   # variable files        
   - variables_files.yaml
 
-  vars_prompt:       ###### 
-  - name: GREET
-    prompt: enter the value
-    private: no
+  # vars_prompt:       ###### 44444444444
+  # - name: GREET
+  #   prompt: enter the value
+  #   private: no
 
   tasks:          # Task level variables
   - name: task level variables
     # vars:
-    #   GREET: "Task level variables"   ## 111111111111111
+    #   GREET: "Task level variables"   ## 222222222
     ansible.builtin.debug:
       msg: "Hello from {{GREET}}"
 
