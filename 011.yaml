@@ -4,8 +4,8 @@
   vars:     # Play level variables
     GREET: "play level variables"
   
-  vars_files:   # variable files
-  - variables_files.yaml
+  # vars_files:   # variable files         ## 1111111
+  # - variables_files.yaml
 
   vars_prompt:
   - name: GREET
