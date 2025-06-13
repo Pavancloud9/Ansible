@@ -1,0 +1,12 @@
+- name: devops course information
+  hosts: local
+  connection: local
+  vars:
+    course_name: "devops with aws"
+    duration: 120
+    topics:
+    - linux
+    - shell
+    - ansible
+    - aws
+    
