@@ -4,15 +4,15 @@
   vars:
     course_name: "devops with aws"   # string
     duration: 120    # number
-  topics: # list
-  - aws
-  - devops
-  - shell
-  - linux
-  live: true  #boolean
-  tools:   #map
-    aws: devops
-    aws: linux
+    topics: # list
+      - aws
+      - devops
+      - shell
+      - linux
+    live: true  #boolean
+    tools:   #map
+      aws: devops
+      aws: linux
   
   tasks:
   - name: "print course information"
