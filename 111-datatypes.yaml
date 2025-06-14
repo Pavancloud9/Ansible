@@ -12,7 +12,7 @@
     live: true  #boolean
     tools:   #map
       aws: devops
-      aws: linux
+      devops: linux
   
   tasks:
   - name: "print course information"
