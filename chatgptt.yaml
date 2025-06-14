@@ -4,14 +4,14 @@
   vars:
     course_name: "Cloud course"  # String
     duration: 120   # Number
-  topics:   #Here starting with Hypen so it is "#List"
-  - aws
-  - cloud
-  - jenkins
-  live: true   #Boolean
-  tools:    # Map
-    aws: cloud
-    jenkins: ci/cd
+    topics:   #Here starting with Hyfen so it is "#List"
+      - aws
+      - cloud
+      - jenkins
+    live: true   #Boolean
+    tools:    # Map
+      aws: cloud
+      jenkins: ci/cd
   tasks:
   - name: print cloud course information
     ansible.builtin.debug:
