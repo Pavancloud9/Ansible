@@ -13,7 +13,8 @@
   tools:   #map
     aws: devops
     aws: linux
+  
   tasks:
-  - name: print course information
+  - name: "print course information"
     ansible.builtin.debug:
       msg: "Hello i'm learning {{course_name}}, duration: {{duration}}, topics are: {{topics}} is it {{live}}, tools are {{tools}}" 
