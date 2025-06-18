@@ -3,9 +3,9 @@
   become: yes
   tasks:
   - name: Install nginx if RHEL
-    ansible.builtin.dnf:
+    ansible.builtin.package:
       name: nginx
-      state: absent
+      state: present
     when: ansible_os_family == "RedHat"
 
     
