@@ -3,13 +3,13 @@
   become: yes
   tasks:
   - name: Install nginx if RHEL
-    ansible.builtin.dnf:
+    ansible.builtin.package:
       name: nginx
       state: absent
     when: ansible_os_family == "RedHat"
 
   - name: Install nginx if ubuntu
-    ansible.builtin.apt:
+    ansible.builtin.package:
       name: nginx
       state: present
     when: ansible_os_family == "Debian"
