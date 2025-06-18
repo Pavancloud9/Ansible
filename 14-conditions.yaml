@@ -5,7 +5,7 @@
   - name: Install nginx if RHEL
     ansible.builtin.package:
       name: nginx
-      state: present
+      state: absent
     when: ansible_os_family == "RedHat"
 
     
