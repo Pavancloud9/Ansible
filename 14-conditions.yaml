@@ -6,6 +6,8 @@
     ansible.builtin.package:
       name: nginx
       state: absent
+    when: ansible_os_family == "RedHat"
+    
     
 
 
