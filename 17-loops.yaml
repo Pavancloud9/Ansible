@@ -9,7 +9,7 @@
     loop:
     - { name: 'git', state: 'installed' }
     - { name: 'gcc', state: 'absent' }
-    - { name: git, state: 'present' }
-    - {name: 'zip', state: 'present'}
+    - { name: 'git', state: 'present' }
+    - { name: 'zip', state: 'present' }
 
     
