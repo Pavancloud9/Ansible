@@ -1,6 +1,7 @@
 - name: Install and remove some packages
   hosts: local
   connection: local
+  become: yes
   tasks:
   - name: Install and remove multiple packages
     ansible.builtin.package:
@@ -9,7 +10,7 @@
     loop:
     - { name: 'git', state: 'installed' }
     - { name: 'gcc', state: 'absent' }
-    - { name: 'git', state: 'present' }
-    - { name: 'zip', state: 'present' }
+    - { name: 'mysql', state: 'installed' }
+    - { name: 'zip', state: 'absent' }
 
     
