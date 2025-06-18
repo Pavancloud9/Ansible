@@ -4,7 +4,7 @@
   tasks:
   - name: Install packages
     ansible.builtin.package:
-      name: {{item}}
+      name: "{{item}}"
       state: installed
     loop:
     - gcc
