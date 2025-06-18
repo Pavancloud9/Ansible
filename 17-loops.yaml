@@ -4,8 +4,8 @@
   tasks:
   - name: Install and remove multiple packages
     ansible.builtin.package:
-      name: "{{item.name}}"
-      state: "{{item.state}}"
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
     loop:
     - { name: 'git', state: 'installed' }
     - { name: 'gcc', state: 'absent' }
