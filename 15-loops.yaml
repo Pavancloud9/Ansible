@@ -1,4 +1,4 @@
-- name: loops ( Install Multiple packages )
+- name: loops
   hosts: local
   connection: local
   tasks:
