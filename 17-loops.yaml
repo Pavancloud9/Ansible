@@ -5,12 +5,12 @@
   tasks:
   - name: Install and remove multiple packages
     ansible.builtin.package:
-      name: "{{ item.name }}"
-      state: "{{ item.state }}"
+      name: "{{item.name}}"
+      state: "{{item.state}}"
     loop:
     - { name: 'git', state: 'installed' }
-    - { name: 'gcc', state: 'absent' }
+    - { name: 'gcc', state: 'installed' }
     - { name: 'mysql', state: 'installed' }
-    - { name: 'zip', state: 'absent' }
+    - { name: 'zip', state: 'installed' }
 
     
