@@ -5,7 +5,7 @@
   - name: Install packages
     ansible.builtin.package:
       name: "{{item}}"
-      state: installed
+      state: absent
     loop:
     - gcc
     - zip
