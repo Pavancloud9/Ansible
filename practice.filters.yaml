@@ -1,3 +1,6 @@
+# students: "ram, sita, anji"   #### STRING   [ ] --> this is list in output
+ 
+
 - name: convert string to list
   hosts: local
   connection: local
@@ -7,3 +10,12 @@
       students: "ram, sita, anji"
     ansible.builtin.debug:
       msg: "students are {{ students | split(',') }}"
+
+  - name: convert list to string
+    vars:
+      tools:
+      - aws
+      - linux
+      - shell
+    ansible.builtin.debug:
+      msg: "tools are {{ tools | join(,) }}"
