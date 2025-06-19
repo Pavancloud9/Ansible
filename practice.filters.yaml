@@ -19,3 +19,13 @@
       - shell
     ansible.builtin.debug:
       msg: "tools are {{ tools | join(',') }}"
+
+  - name: convert map in to list
+    vars:
+      tools:
+        aws: devops
+        ansible: git
+        jenkins: cicd
+    ansible.builtin.debug:
+      msg: "tools are {{tools | dict2items }}"
+
