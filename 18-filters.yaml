@@ -7,9 +7,7 @@
       msg: "hello from {{person | default('devops with aws') }}"
 
 - name: convert String to list
-  hosts: local
-  connection: local
   vars:
-    fruits: "banana, goa, apple"
+    fruits: "banana,goa,apple"
   ansible.builtin.debug:
     msg: "Fruits are: {{ fruits | split(',') }}"
