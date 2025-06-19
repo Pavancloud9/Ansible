@@ -29,3 +29,5 @@
       - {'key': 'jenkins', 'value': 'cicd'}
     ansible.builtin.debug:
       msg: " topics are {{ topics | items2dict }}"
+
+  - name: conver

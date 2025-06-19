@@ -1,37 +1,9 @@
-# fruits: "banana, goa, apple"  # STRING
-
 - name: convert string to list
   hosts: local
   connection: local
   tasks:
-  - name: convert string to list
+  - name: convert string in to list
     vars:
-      fruits: "banana, goa, apple"
+      students: "ram, sita, anji"
     ansible.builtin.debug:
-      msg: "fruits are {{ fruits | split(',') }}"
-
-  
-  - name: convert map to list
-    vars:
-      course_info:
-        aws: devops
-        jenkins: ci/cd
-        shell: linux
-    ansible.builtin.debug:
-      msg: "course info is {{ course_info | dict2items  }}"
-
-  - name: convert list to map
-    vars:
-      course_info:
-      - {'key': 'aws', 'value': 'devops'}
-      - {'key': 'aws', 'value': 'devops'}
-      - {'key': 'aws', 'value': 'devops'}
-    ansible.builtin.debug:
-      msg: "course is {{ course_info | items2dict }}"
-
-
-
-
-
-
-  
+      msg: "students are {{ students | split(',') }}"
