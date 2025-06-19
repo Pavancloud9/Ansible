@@ -22,7 +22,7 @@
 
   - name: convert list to map
     vars:
-      course_info
+      course_info:
       - { script: aws }
       - { shell: linux }
       - { ansible: cicd }
