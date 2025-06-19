@@ -11,6 +11,15 @@
       msg: "fruits are {{ fruits | split(',') }}"
 
   
+  - name: convert map to list
+    vars:
+      course_info:
+        aws: devops
+        jenkins: ci/cd
+        shell: linux
+    ansible.builtin.debug:
+      msg: "course info is {{ course_info | dict2items  }}"
+
 
 
 
