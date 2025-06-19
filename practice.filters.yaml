@@ -18,4 +18,4 @@
       - linux
       - shell
     ansible.builtin.debug:
-      msg: "tools are {{ tools | join(,) }}"
+      msg: "tools are {{ tools | join(',') }}"
