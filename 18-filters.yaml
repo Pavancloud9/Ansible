@@ -21,11 +21,11 @@
     ansible.builtin.debug:
       msg: "course info {{ course | dict2items }} "
 
-  - name: coonvert list to map
+  - name: coonvert list into map
     vars:
       topics:
-      - linux
-      - shell
-      - aws
+      - {'key': 'aws', 'value': 'devops'}
+      - {'key': 'shell', 'value': 'linux'}
+      - {'key': 'jenkins', 'value': 'cicd'}
     ansible.builtin.debug:
       msg: " topics are {{ topics | items2dict }}"
