@@ -23,9 +23,9 @@
   - name: convert list to map
     vars:
       course_info:
-      - { script: aws }
-      - { shell: linux }
-      - { ansible: cicd }
+      - {'key': 'aws', 'value': 'devops'}
+      - {'key': 'aws', 'value': 'devops'}
+      - {'key': 'aws', 'value': 'devops'}
     ansible.builtin.debug:
       msg: "course is {{ course_info | items2dict }}"
 
