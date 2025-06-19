@@ -6,7 +6,6 @@
     ansible.builtin.debug:
       msg: "Hello from {{ person | default('ram') }}"
 
-  tasks:
   - name: convert string to list
     vars:
       fruits: "banana, goa, apple"
