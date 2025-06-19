@@ -20,6 +20,16 @@
     ansible.builtin.debug:
       msg: "course info is {{ course_info | dict2items  }}"
 
+  - name: convert list to map
+    vars:
+      course_info
+      - { script: aws }
+      - { shell: linux }
+      - { ansible: cicd }
+    ansible.builtin.debug:
+      msg: "course is {{ course_info | items2dict }}"
+
+
 
 
 
