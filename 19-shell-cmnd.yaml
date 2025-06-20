@@ -7,6 +7,6 @@
     ansible.builtin.command: ls -ltr
     register: command_result
 
-  - name: print the output
-    ansible.builtin.debug:
-      msg: "{{ command_result }}"
+  # - name: print the output
+  #   ansible.builtin.debug:
+  #     msg: "{{ command_result }}"
