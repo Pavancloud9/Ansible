@@ -32,7 +32,7 @@
   - name: convert list in to map
     vars:
       tools:
-      - { aws: devops }
+      - {'key': 'aws', 'value': 'devops'}
     ansible.builtin.debug:
       msg: "tools are {{ tools | items2dict }}"
 
