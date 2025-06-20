@@ -36,3 +36,9 @@
     ansible.builtin.debug:
       msg: "tools are {{ tools | items2dict }}"
 
+  - name: convert upper to lower
+    vars:
+      name: "sivakumar reddy"
+    ansible.builtin.debug:
+      msg: "name is {{ name | lower }}"
+
