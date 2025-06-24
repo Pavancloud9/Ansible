@@ -6,10 +6,10 @@
     ansible.builtin.debug:
       name: nginx
       state: installed
-    when: ansible_os_family == RHEL
+    when: ansible_os_family == "RHEL"
   
   - name: Install nginx if ubuntu
     ansible.builtin.debug:
       name: nginx
       state: installed
-    when: ansible_os_family == Debian
+    when: ansible_os_family == "Debian"
