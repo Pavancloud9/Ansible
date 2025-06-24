@@ -5,3 +5,7 @@
   - name: execute ls cmnd
     ansible.builtin.command:  ls -ltr
     register: "command_result"
+  
+  - name: print command_result
+    ansible.builtin.debug:
+      msg: "{{command_result}}"
