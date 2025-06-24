@@ -1,10 +1,10 @@
-ok: [172.31.94.37] => {
+ok: [localhost] => {
     "msg": {
         "all_ipv4_addresses": [
-            "172.31.94.37"
+            "172.31.94.70"
         ],
         "all_ipv6_addresses": [
-            "fe80::1013:77ff:fef6:d533"
+            "fe80::107a:8bff:fe7b:3ed3"
         ],
         "ansible_local": {},
         "apparmor": {
@@ -32,34 +32,34 @@ ok: [172.31.94.37] => {
             "root": "/dev/mapper/RootVG-rootVol"
         },
         "date_time": {
-            "date": "2025-06-18",
-            "day": "18",
-            "epoch": "1750249653",
-            "epoch_int": "1750249653",
-            "hour": "12",
-            "iso8601": "2025-06-18T12:27:33Z",
-            "iso8601_basic": "20250618T122733310297",
-            "iso8601_basic_short": "20250618T122733",
-            "iso8601_micro": "2025-06-18T12:27:33.310297Z",
-            "minute": "27",
+            "date": "2025-06-24",
+            "day": "24",
+            "epoch": "1750779399",
+            "epoch_int": "1750779399",
+            "hour": "15",
+            "iso8601": "2025-06-24T15:36:39Z",
+            "iso8601_basic": "20250624T153639317647",
+            "iso8601_basic_short": "20250624T153639",
+            "iso8601_micro": "2025-06-24T15:36:39.317647Z",
+            "minute": "36",
             "month": "06",
-            "second": "33",
-            "time": "12:27:33",
+            "second": "39",
+            "time": "15:36:39",
             "tz": "UTC",
             "tz_dst": "UTC",
             "tz_offset": "+0000",
-            "weekday": "Wednesday",
-            "weekday_number": "3",
-            "weeknumber": "24",
+            "weekday": "Tuesday",
+            "weekday_number": "2",
+            "weeknumber": "25",
             "year": "2025"
         },
         "default_ipv4": {
-            "address": "172.31.94.37",
+            "address": "172.31.94.70",
             "alias": "enX0",
             "broadcast": "172.31.95.255",
             "gateway": "172.31.80.1",
             "interface": "enX0",
-            "macaddress": "12:13:77:f6:d5:33",
+            "macaddress": "12:7a:8b:7b:3e:d3",
             "mtu": 9001,
             "netmask": "255.255.240.0",
             "network": "172.31.80.0",
@@ -546,7 +546,7 @@ ok: [172.31.94.37] => {
             },
             "hw_timestamp_filters": [],
             "ipv4": {
-                "address": "172.31.94.37",
+                "address": "172.31.94.70",
                 "broadcast": "172.31.95.255",
                 "netmask": "255.255.240.0",
                 "network": "172.31.80.0",
@@ -554,12 +554,12 @@ ok: [172.31.94.37] => {
             },
             "ipv6": [
                 {
-                    "address": "fe80::1013:77ff:fef6:d533",
+                    "address": "fe80::107a:8bff:fe7b:3ed3",
                     "prefix": "64",
                     "scope": "link"
                 }
             ],
-            "macaddress": "12:13:77:f6:d5:33",
+            "macaddress": "12:7a:8b:7b:3e:d3",
             "module": "xen_netfront",
             "mtu": 9001,
             "pciid": "vif-0",
@@ -575,29 +575,33 @@ ok: [172.31.94.37] => {
             "AWS_PAGER": "",
             "BASH_FUNC_which%%": "() {  ( alias;\n eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@\n}",
             "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1001/bus",
+            "HISTCONTROL": "ignoredups",
             "HISTSIZE": "10000",
             "HISTTIMEFORMAT": "%d/%m/%y %T ",
             "HOME": "/home/ec2-user",
+            "HOSTNAME": "ip-172-31-94-70.ec2.internal",
             "LANG": "C.UTF-8",
             "LESSOPEN": "||/usr/bin/lesspipe.sh %s",
             "LOGNAME": "ec2-user",
             "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:",
+            "MAIL": "/var/spool/mail/ec2-user",
             "MOTD_SHOWN": "pam",
+            "OLDPWD": "/home/ec2-user",
             "PATH": "/home/ec2-user/.local/bin:/home/ec2-user/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin",
             "PROMPT_COMMAND": "$(history -w)",
-            "PWD": "/home/ec2-user",
+            "PWD": "/home/ec2-user/Ansible",
             "REQUESTS_CA_BUNDLE": "/etc/pki/tls/certs/ca-bundle.crt",
             "SHELL": "/bin/bash",
-            "SHLVL": "1",
-            "SSH_CLIENT": "172.31.94.70 33340 22",
-            "SSH_CONNECTION": "172.31.94.70 33340 172.31.94.37 22",
+            "SHLVL": "2",
+            "SSH_CLIENT": "171.48.99.212 51843 22",
+            "SSH_CONNECTION": "171.48.99.212 51843 172.31.94.70 22",
             "SSH_TTY": "/dev/pts/0",
             "SYSTEMD_PAGER": "cat",
             "TERM": "xterm",
             "USER": "ec2-user",
             "XDG_RUNTIME_DIR": "/run/user/1001",
             "XDG_SESSION_CLASS": "user",
-            "XDG_SESSION_ID": "7",
+            "XDG_SESSION_ID": "12",
             "XDG_SESSION_TYPE": "tty",
             "_": "/usr/bin/python3",
             "which_declare": "declare -f"
@@ -605,11 +609,11 @@ ok: [172.31.94.37] => {
         "fibre_channel_wwn": [],
         "fips": true,
         "form_factor": "Other",
-        "fqdn": "ip-172-31-94-37.ec2.internal",
+        "fqdn": "ip-172-31-94-70.ec2.internal",
         "gather_subset": [
             "all"
         ],
-        "hostname": "ip-172-31-94-37",
+        "hostname": "ip-172-31-94-70",
         "hostnqn": "",
         "interfaces": [
             "enX0",
@@ -712,7 +716,7 @@ ok: [172.31.94.37] => {
         "loadavg": {
             "15m": 0.01,
             "1m": 0.08,
-            "5m": 0.02
+            "5m": 0.05
         },
         "lsb": {},
         "lvm": "N/A",
@@ -721,8 +725,8 @@ ok: [172.31.94.37] => {
         "memfree_mb": 170,
         "memory_mb": {
             "nocache": {
-                "free": 606,
-                "used": 147
+                "free": 546,
+                "used": 207
             },
             "real": {
                 "free": 170,
@@ -730,62 +734,78 @@ ok: [172.31.94.37] => {
                 "used": 583
             },
             "swap": {
-                "cached": 0,
-                "free": 2047,
+                "cached": 1,
+                "free": 2033,
                 "total": 2047,
-                "used": 0
+                "used": 14
             }
         },
         "memtotal_mb": 753,
         "module_setup": true,
         "mounts": [
             {
-                "block_available": 1099070,
+                "block_available": 964301,
                 "block_size": 4096,
                 "block_total": 1556480,
-                "block_used": 457410,
+                "block_used": 592179,
                 "device": "/dev/mapper/RootVG-rootVol",
                 "fstype": "xfs",
-                "inode_available": 3089944,
+                "inode_available": 3055488,
                 "inode_total": 3145728,
-                "inode_used": 55784,
+                "inode_used": 90240,
                 "mount": "/",
                 "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,sunit=8,swidth=8,noquota",
-                "size_available": 4501790720,
+                "size_available": 3949776896,
                 "size_total": 6375342080,
                 "uuid": "1290fb9a-d62d-48f0-b048-5a59aa4703fc"
             },
             {
-                "block_available": 399049,
+                "block_available": 231871,
+                "block_size": 4096,
+                "block_total": 245760,
+                "block_used": 13889,
+                "device": "/dev/mapper/RootVG-homeVol",
+                "fstype": "xfs",
+                "inode_available": 523370,
+                "inode_total": 524288,
+                "inode_used": 918,
+                "mount": "/home",
+                "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,sunit=8,swidth=8,noquota",
+                "size_available": 949743616,
+                "size_total": 1006632960,
+                "uuid": "a6bea37c-c37d-4aaf-a23e-4e8e43ac4be1"
+            },
+            {
+                "block_available": 382175,
                 "block_size": 4096,
                 "block_total": 507904,
-                "block_used": 108855,
+                "block_used": 125729,
                 "device": "/dev/mapper/RootVG-varVol",
                 "fstype": "xfs",
-                "inode_available": 1046555,
+                "inode_available": 1046450,
                 "inode_total": 1048576,
-                "inode_used": 2021,
+                "inode_used": 2126,
                 "mount": "/var",
                 "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,sunit=8,swidth=8,noquota",
-                "size_available": 1634504704,
+                "size_available": 1565388800,
                 "size_total": 2080374784,
                 "uuid": "f3182c67-5bb3-43aa-ad8a-5e6722a0853b"
             },
             {
-                "block_available": 235612,
+                "block_available": 484588,
                 "block_size": 4096,
-                "block_total": 245760,
-                "block_used": 10148,
-                "device": "/dev/mapper/RootVG-homeVol",
+                "block_total": 507904,
+                "block_used": 23316,
+                "device": "/dev/mapper/RootVG-logVol",
                 "fstype": "xfs",
-                "inode_available": 524269,
-                "inode_total": 524288,
-                "inode_used": 19,
-                "mount": "/home",
+                "inode_available": 1048529,
+                "inode_total": 1048576,
+                "inode_used": 47,
+                "mount": "/var/log",
                 "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,sunit=8,swidth=8,noquota",
-                "size_available": 965066752,
-                "size_total": 1006632960,
-                "uuid": "a6bea37c-c37d-4aaf-a23e-4e8e43ac4be1"
+                "size_available": 1984872448,
+                "size_total": 2080374784,
+                "uuid": "17dab4e1-467c-4689-8fb1-65849699245f"
             },
             {
                 "block_available": 495995,
@@ -804,26 +824,10 @@ ok: [172.31.94.37] => {
                 "uuid": "c53e90fa-9205-4e47-8cad-e4f5824d59db"
             },
             {
-                "block_available": 490890,
-                "block_size": 4096,
-                "block_total": 507904,
-                "block_used": 17014,
-                "device": "/dev/mapper/RootVG-logVol",
-                "fstype": "xfs",
-                "inode_available": 1048538,
-                "inode_total": 1048576,
-                "inode_used": 38,
-                "mount": "/var/log",
-                "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,sunit=8,swidth=8,noquota",
-                "size_available": 2010685440,
-                "size_total": 2080374784,
-                "uuid": "17dab4e1-467c-4689-8fb1-65849699245f"
-            },
-            {
-                "block_available": 1120289,
+                "block_available": 1120003,
                 "block_size": 4096,
                 "block_total": 1136640,
-                "block_used": 16351,
+                "block_used": 16637,
                 "device": "/dev/mapper/RootVG-auditVol",
                 "fstype": "xfs",
                 "inode_available": 2306044,
@@ -831,7 +835,7 @@ ok: [172.31.94.37] => {
                 "inode_used": 4,
                 "mount": "/var/log/audit",
                 "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,sunit=8,swidth=8,noquota",
-                "size_available": 4588703744,
+                "size_available": 4587532288,
                 "size_total": 4655677440,
                 "uuid": "1552b811-d96d-49ad-b1c4-9ba4566e008a"
             },
@@ -868,7 +872,7 @@ ok: [172.31.94.37] => {
                 "uuid": "26D2-298A"
             }
         ],
-        "nodename": "ip-172-31-94-37.ec2.internal",
+        "nodename": "ip-172-31-94-70.ec2.internal",
         "os_family": "RedHat",
         "pkg_mgr": "dnf",
         "proc_cmdline": {
@@ -920,11 +924,11 @@ ok: [172.31.94.37] => {
         },
         "selinux_python_present": true,
         "service_mgr": "systemd",
-        "ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJk1+I6fIgmhrAnUPb9YzlehKjnUZ4foIm73P1b34LFVuJtNPJwD6oL5xXY5Jm5BsN4opPKBjXh5i4GKTJCvAN4=",
+        "ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBD3e/Tn6vmOt0oD+yJkGQOCaRxeoVs43aa3LGXbp0X0v3CnJz4vvPIGD1sJ2fKg6Yf1wfa8A5AoEX1geQQT4UtE=",
         "ssh_host_key_ecdsa_public_keytype": "ecdsa-sha2-nistp256",
-        "ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABgQDDs4oWCFryLyVP1VdOkTc9Byeats0K1GbJAhkWJUxHFWLcTQNWDOVZEGcDKoB/RaZtCcMUENsen5fBKbVUfVUtb6lVdPKinuBItDdWYlMn8/WAAQRQ5cWrhbh+OFbNUOd2DnxCfIPEhl+k4pkwVhgIG1B+EQI7HXyo2Bj6tRKSknqgbmmbXZgzzFujsNB/piKzVMfabEvdJPvTEbPwXUqjAm0NjU7O26Nyif6Qi3U/DqZBpGjFT80sd4aovlrUXCzXvgE61s1OQZCyOzJcjhRVrPH4dSzRH/jGOBnZfat6T+F8GTMqQVkSHrw95VlfHDstX4trHn4PRyiLr3C3ZVhTGNs+3+6sqNdlxdm0NJNJrZ6OzGbTb37eI7A8w4nBXjxZwu/UGarFqbarVcgregaBv8tNlyVY8K1Pe547xCpjVRKE2Lj52am4L1TSWMlipTcMHiuie7NU6ootveLlUFNpqHeGQsoKPFYnheYVhmP95mGUjokJatPjlqHQtxr+VJ8=",
+        "ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABgQDA930V5KMJwJUhV2MDqC4wifP3JJR21KMJmPFarpgBPUc1IzHPECpdQ+TcJVWyZ1/DL2u4hIUNG/AiOPY+j3S5oY/EcXVvIZUClsRvQSRY9IO/beZ538G3ATVVcRRy5wLF/p7DD6sjkEimBNZf9VIdb/mDqTi7mET8n+Rtqr1IVvgzyWfaysao8ZDGasbZWUSc6jcjRYDHDSnoo+sj1IdWQruBxgMoran82Q9XylUKtyg9eYNVAJbzEkswpNO4POFoiOfmPfEFUHT2W7hm/qOgkh+URd/KjXHOFF3weLv/OzE/UeecxJ1tdPW1MK2F+izbPdZ274iVjMvinX0FMW2E5txaTEBXZYeNJ7JXEo6om2migV2B9cxcMhOSdB/RkZn0loOGv70PKmnQroA9t26rvpL6uwF8epo2iHAYABxYEqXes9Y5OKS+kVCIRH2eL1v364qRn4dt9lfFNOvBGbcsNNLdJcq8CSSioQt/YiqE0P2mDKvnEM0eZHBvXm0SmA0=",
         "ssh_host_key_rsa_public_keytype": "ssh-rsa",
-        "swapfree_mb": 2047,
+        "swapfree_mb": 2033,
         "swaptotal_mb": 2047,
         "system": "Linux",
         "system_capabilities": [
@@ -932,7 +936,7 @@ ok: [172.31.94.37] => {
         ],
         "system_capabilities_enforced": "True",
         "system_vendor": "Xen",
-        "uptime_seconds": 3051,
+        "uptime_seconds": 33311,
         "user_dir": "/home/ec2-user",
         "user_gecos": "",
         "user_gid": 1001,
@@ -949,4 +953,3 @@ ok: [172.31.94.37] => {
         "virtualization_type": "xen"
     }
 }
-
