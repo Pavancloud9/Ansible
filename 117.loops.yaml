@@ -1,13 +1,14 @@
-- name: Install packages
+- name: loops
   hosts: local
   connection: local
   become: yes
   tasks:
-  - name: Install multiple packages
+  - name: install multiple packages
     ansible.builtin.package:
-      name: "{{item}}"
+      name: "{{ item }}"
       state: installed
+    
     loop:
-    - git
-    - nginx
-    - zip
+    - { name: 'git', state: 'installed' }
+    - { name: 'zip', state: "absent" }
+    - { name: 'nginx', state: installed }
