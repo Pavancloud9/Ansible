@@ -1,0 +1,21 @@
+- name: data types
+  hosts: local
+  connection: local
+  vars:
+    course_name: "print course information"   # String
+    duration: 120   # Number
+    tools:    # List
+    - aws
+    - devops
+    - shell
+    - linux
+    live: true  # Boolean
+    tools_info:    # Map
+      aws: devops
+      linux: shell
+      jenkins: cicd
+  tasks:
+  - name: print course information
+    ansible.builtin.debug:
+      msg: "course is {{course_name}}, duration is {{duration}}, tools are {{tools}}, is it live {{live}}, tools_info is {{tools_info}}"
+        
