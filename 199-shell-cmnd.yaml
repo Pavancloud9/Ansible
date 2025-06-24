@@ -1,0 +1,7 @@
+- name: shell vs cmnd module
+  hosts: local
+  connection: local
+  tasks:
+  - name: execute ls cmnd
+    ansible.builtin.command:  ls -ltr
+    register: "command_result"
