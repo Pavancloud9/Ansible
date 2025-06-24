@@ -3,13 +3,13 @@
   connection: local
   tasks:
   - name: Install nginx if it is RHEL
-    ansible.builtin.debug:
+    ansible.builtin.package:
       name: nginx
       state: installed
     when: ansible_os_family == "RHEL"
   
   - name: Install nginx if ubuntu
-    ansible.builtin.debug:
+    ansible.builtin.package:
       name: nginx
       state: installed
     when: ansible_os_family == "Debian"
