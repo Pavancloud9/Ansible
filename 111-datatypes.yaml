@@ -19,7 +19,7 @@
     ansible.builtin.debug:
       msg: "course is {{course_name}}, duration is {{duration}}, tools are {{tools}}, is it live {{live}}, tools_info is {{tools_info}}"
     
-     tools_info:    # Map
+    task_tools_info:    # Map
       aws: devops
       linux: shell
       jenkins: cicd
