@@ -1,0 +1,11 @@
+- name: Task and play level variables
+  hosts: ansible
+  vars:
+    COURSE: devops with aws
+    DURATION: 120 hrs
+    TRAINER: sivakumar
+
+  tasks:
+  - name: Print variables
+    ansible.builtin.debug:
+      msg: "course info is {{ COURSE }}, duration is {{ DURATION }}, TRAINER is {{ TRAINER }}"
