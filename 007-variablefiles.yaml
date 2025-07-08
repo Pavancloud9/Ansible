@@ -1,5 +1,6 @@
 - name: Variable files
   hosts: ansible
+  connection: local
   vars_files:
     variables_files.yaml
   tasks:
