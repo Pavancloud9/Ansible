@@ -6,13 +6,15 @@
     TRAINER: sivakumar
 
   tasks:
-  - name: Print variables from play
-    ansible.builtin.debug:
-      msg: "course info is {{ COURSE }}, duration is {{ DURATION }}, TRAINER is {{ TRAINER }}"
-
   - name: print variables from Task level
     vars:
       HI: hello from task level
     ansible.builtin.debug:
       msg: "HI {{ HI }}"
+
+  - name: Print variables from play
+    ansible.builtin.debug:
+      msg: "course info is {{ COURSE }}, duration is {{ DURATION }}, TRAINER is {{ TRAINER }}"
+
+  
     
