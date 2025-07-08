@@ -11,7 +11,8 @@
       msg: "course info is {{ COURSE }}, duration is {{ DURATION }}, TRAINER is {{ TRAINER }}"
 
   - name: print variables from Task level
-    ansible.builtin.debug:
     vars:
       HI: hello from task level
-      msg: "hi from {{ HI }}"
+    ansible.builtin.debug:
+      msg: HI "{{ HI }}""
+    
