@@ -14,5 +14,5 @@
     vars:
       HI: hello from task level
     ansible.builtin.debug:
-      msg: HI "{{ HI }}""
+      msg: HI "{{ HI }}"
     
