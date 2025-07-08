@@ -1,8 +1,8 @@
 - name: Task and play level variables
   hosts: ansible
   vars:
-    COURSE: devops with aws
-    DURATION: 120 hrs
+    COURSE: "devops with aws"
+    DURATION: "120 hrs"
     TRAINER: sivakumar
 
   tasks:
