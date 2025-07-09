@@ -1,5 +1,6 @@
 - name: variables
   hosts: local
+  connection: local
   vars:
     GREET: "Hello from play level variables"
   
