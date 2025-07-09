@@ -10,4 +10,7 @@
       msg: "given number is greater than {{ number }}"
     when: number > 1000
   
-  
+  - name: print if number is less than or equal to 1000
+    ansible.builtin.debug:
+      msg: "given number is less than or equal to 1000"
+    when: number <= 1000
