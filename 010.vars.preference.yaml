@@ -11,8 +11,9 @@
     prompt: please enter the value
     private: false
 
-  tasks: Task level variables
-  vars:
-    GREET: "task level variables"
-  ansible.builtin.debug:
-    msg: "print {{ GREET }}"
+  tasks:
+  - name: task level variables
+    vars:
+    - GREET: "task level variables"
+    ansible.builtin.debug:
+      msg: "print {{ GREET }}"
