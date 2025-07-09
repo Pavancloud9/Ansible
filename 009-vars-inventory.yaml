@@ -1,5 +1,5 @@
 - name: variables in inventory
-  hosts: local
+  hosts: ansible
   connection: local
   tasks:
   - name: variables in inventory
