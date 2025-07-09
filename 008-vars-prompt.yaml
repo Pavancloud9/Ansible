@@ -1,5 +1,5 @@
 - name: prompt the user
-  hosts: local
+  hosts: ansible
   connection: local
   vars_prompt:
   - name: COURSE
