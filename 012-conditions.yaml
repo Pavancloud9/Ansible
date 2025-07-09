@@ -1,0 +1,13 @@
+- name: print if value is greater than 100 or not
+  hosts: local
+  connection: local
+  vars:
+    number: 100
+  
+  tasks:
+  - name: print if number is greater than 1000
+    ansible.builtin.debug:
+      msg: "given number is greater than {{ number }}"
+    when: number > 1000
+  
+  
