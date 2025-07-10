@@ -22,8 +22,6 @@
   - name: convert list to map
     vars:
       snackitems:
-      - chai
-      - tea
-      - coffee
+        ['chai', 'tea', 'coffee']
     ansible.builtin.debug:
-      msg: "snack_items are {{ snackitems | items2dict }}"
+      msg: "snack items are {{ snackitems | items2dict }}"
