@@ -1,0 +1,13 @@
+- name: Install and remove packages
+  hosts: local
+  connection: local
+  tasks:
+  - name: Install and remove packages
+    ansible.builtin.package:
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
+    
+    loop:
+    - { name: 'git', state: 'installed' }
+    - { name: 'gcc', state: 'installed' }
+    - { name: 'zip', state: 'absent' }
