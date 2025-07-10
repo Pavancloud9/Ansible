@@ -17,3 +17,13 @@
       - chai
     ansible.builtin.debug:
       msg: "fruits are {{ fruits | join(',') }}"
+
+
+  - name: convert list to map
+    vars:
+      snack_items:
+      - chai
+      - tea
+      - coffee
+    ansible.builtin.debug:
+      msg: "snack_items are {{ snack_items | items2dict }}"
