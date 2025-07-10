@@ -11,6 +11,9 @@
 
   - name: convert list to string
     vars:
-      fruits: "tea, cofee, book"
+      fruits:
+      - tea
+      - cofee
+      - chai
     ansible.builtin.debug:
-      msg:"fruits are {{ fruits | join(',') }}"
+      msg: "fruits are {{ fruits | join(',') }}"
