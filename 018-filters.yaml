@@ -19,9 +19,7 @@
 
   - name: Convert list to map in Ansible
     vars:
-      fruit_pairs:
-      - ["key1", "apple"]
-      - ["key2", "banana"]
-      - ["key3", "cherry"]
-    ansible.builtin.debug:
-      msg: "Converted map: {{ fruit_pairs | dict }}"
+      fruits:
+      - { 'key': 'fruit1', 'value':'goa'}
+      - { 'key': 'fruit2', 'value': 'banana'}
+      - { 'key': 'fruit3', 'value': 'apple'}
