@@ -9,3 +9,11 @@
   - name: print output
     ansible.builtin.debug:
       msg: "{{ command_result }}" 
+
+  - name: execute ls command
+    ansible.builtin.shell: ls > /tmp/output.shell
+    register: command_result
+
+  - name: print the output  
+    ansible.builtin.debug:
+      msg: "{{ command_result }}"
