@@ -23,3 +23,5 @@
       - { 'key': 'fruit1', 'value':'goa'}
       - { 'key': 'fruit2', 'value': 'banana'}
       - { 'key': 'fruit3', 'value': 'apple'}
+    ansible.builtin.debug:
+      msg: "fruits are {{ fruits | items2dict }}"
