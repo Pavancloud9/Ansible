@@ -1,27 +1,9 @@
 - name: convert string to list
   hosts: local
   connection: local
-  
   tasks:
   - name: convert string to list
     vars:
       fruits: "goa, banana, apple"
     ansible.builtin.debug:
       msg: "fruits are {{ fruits | split(',') }}"
-
-  - name: convert list to string
-    vars:
-      fruits:
-      - tea
-      - cofee
-      - chai
-    ansible.builtin.debug:
-      msg: "fruits are {{ fruits | join(',') }}"
-
-
-  - name: convert list to map
-    vars:
-      snackitems:
-        ['chai', 'tea', 'coffee']
-    ansible.builtin.debug:
-      msg: "snack items are {{ snackitems | items2dict }}"
