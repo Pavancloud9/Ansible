@@ -7,11 +7,3 @@
       fruits: "goa, banana, apple"
     ansible.builtin.debug:
       msg: "fruits are {{ fruits | split(',') }}"
-
-  - name: convert list to map
-    vars:
-      fruits:
-        - ["key1", "goa"]
-        - ["key2", "banana"] 
-    ansible.builtin.debug:
-      msg: "fruits are {{ fruits | dict }}"
