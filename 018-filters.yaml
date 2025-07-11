@@ -11,8 +11,8 @@
   - name: convert list to map
     vars:
       fruits:
-      - goa
-      - banana
-      - apple
+        fruit1: goa
+        fruit2: banana
+        fruit3: apple
     ansible.builtin.debug:
       msg: "fruits are {{ fruits | dict }}"
