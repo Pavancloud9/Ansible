@@ -3,7 +3,7 @@
   connection: local
   tasks:
   - name: execute ls -ltr command
-    ansible.builtin.shell:  ls -ltr
+    ansible.builtin.command:  ls -ltr
     register: command_result
 
   - name: print the output
