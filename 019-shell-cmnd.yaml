@@ -4,6 +4,12 @@
   tasks:
   - name: execute ls command
     ansible.builtin.command: ls -ltr
+    register: ls_ltr_command_result
+
+  - name: print the output
+    ansible.builtin.debug:
+      msg: "print result {{ ls_ltr_command_result }}"
+
 
 
    
