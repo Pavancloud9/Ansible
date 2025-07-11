@@ -23,7 +23,5 @@
       - ["key1", "apple"]
       - ["key2", "banana"]
       - ["key3", "cherry"]
-  tasks:
-    - name: convert list to map
-      ansible.builtin.debug:
-        msg: "Converted map: {{ fruit_pairs | dict }}"
+    ansible.builtin.debug:
+      msg: "Converted map: {{ fruit_pairs | dict }}"
