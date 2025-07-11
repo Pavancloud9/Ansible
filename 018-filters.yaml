@@ -17,7 +17,7 @@
     ansible.builtin.debug:
       msg: "fruits are {{ fruits | dict2items }}"
 
-  - name: Convert list to map in Ansible
+  - name: Convert list to map
     vars:
       fruits:
       - { 'key': 'fruit1', 'value':'goa'}
