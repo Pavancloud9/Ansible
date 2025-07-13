@@ -1,5 +1,4 @@
 # students: "ram, sita, anji"   #### STRING   [ ] --> this is list in output
- 
 
 - name: convert string to list
   hosts: local
