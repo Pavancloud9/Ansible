@@ -9,6 +9,8 @@
       msg: "fruits are {{ fruits | split(',') }}"
 
   - name: convert map to list
+    tags:
+    - uppertolower
     vars:
       fruits:
         fruit1: goa
